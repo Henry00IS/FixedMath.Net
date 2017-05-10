@@ -258,7 +258,7 @@ namespace FixMath.NET
             return new Fix64(sum);
         }
 
-        [MethodImpl(MethodImplOptions.AggressiveInlining)] 
+//        [MethodImpl(MethodImplOptions.AggressiveInlining)] 
         static int CountLeadingZeroes(ulong x) {
             int result = 0;
             while ((x & 0xF000000000000000) == 0) { result += 4; x <<= 4; }
@@ -481,7 +481,7 @@ namespace FixMath.NET
 
 
 
-        [MethodImplAttribute(MethodImplOptions.AggressiveInlining)] 
+//        [MethodImplAttribute(MethodImplOptions.AggressiveInlining)] 
         static long ClampSinValue(long angle, out bool flipHorizontal, out bool flipVertical) {
             // Clamp value to 0 - 2*PI using modulo; this is very slow but there's no better way AFAIK
             var clamped2Pi = angle % PI_TIMES_2;
