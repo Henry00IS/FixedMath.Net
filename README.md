@@ -1,5 +1,7 @@
 ## FixedMath.Net for Unity
 This fork of FixedMath.Net will be used by [SabreCSG](https://github.com/sabresaurus/SabreCSG) to produce more accurate Constructive Solid Geometry output. It helps prevent holes and corruptions due to floating point inaccuracies.
+
+Most notably is the FixVector3 class that is nearly identical to Unity's Vector3 implementation but in fixed point arithmetic.
 ## Original Readme
 This library implements "Fix64", a 64 bit fixed point 31.32 numeric type and transcendent operations on it (square root, trig, etc). It is well covered by unit tests. However, it is still missing some operations; in particular, Tangent is not well tested yet.
 
